@@ -15,7 +15,8 @@ document.getElementById("btn-submit").addEventListener("click", function () {
   // Step-4: verify email and password
   if (email === "faisal@gmail.com" && password === "12345") {
     // window.location.href = "../bank.html";
-    window.location.pathname = "../bank.html";
+    // window.location.pathname = "../bank.html";
+    window.location.replace("http://127.0.0.1:5500/bank.html");
   } else {
     alert("Your password is wrong");
   }
