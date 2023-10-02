@@ -6,16 +6,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Main Bank</title>
   </head>
-  <body>
+  <body class="bg-slate-100">
     <header>
-      <h1 class="text-5xl text-center mt-14">
+      <h1 class="text-5xl text-black text-center mt-14">
         Lets get some Mooooney
-        <span class="font-semibold text-blue-600">Father bank !!</span>
+        <span class="font-semibold text-violet-500">Father bank !!</span>
       </h1>
     </header>
 
     <section class="mt-10">
-      <div class="grid grid-cols-3 gap-4 w-10/12 mx-auto text-white">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 w-10/12 mx-auto text-white"
+      >
         <div class="bg-violet-600 p-12 rounded-md">
           <h4 class="text-2xl">Deposit</h4>
           <h2 class="text-4xl">$<span id="deposit-total">00</span></h2>
@@ -24,7 +26,7 @@
           <h4 class="text-2xl">Withdraw</h4>
           <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
         </div>
-        <div class="bg-fuchsia-600 p-12 rounded-md">
+        <div class="bg-blue-500 p-12 rounded-md">
           <h4 class="text-2xl">Balance</h4>
           <h2 class="text-4xl">$<span id="balance-total">1240</span></h2>
         </div>
@@ -32,9 +34,11 @@
     </section>
 
     <!-- Deposit and withdraw -->
-    <section class="mt-10">
-      <div class="grid grid-cols-2 gap-8 w-10/12 mx-auto text-white">
-        <div class="bg-violet-600 p-12 rounded-md">
+    <section class="mt-16">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-10/12 mx-auto text-white"
+      >
+        <div class="bg-slate-800 p-12 rounded-md">
           <h4 class="text-3xl mb-5">Please Deposit</h4>
           <input
             class="w-8/12 block text-black mb-5 p-3 text-xl outline-none rounded-md"
@@ -45,13 +49,13 @@
           />
           <button
             id="btn-deposit"
-            class="bg-fuchsia-500 hover:bg-fuchsia-600 px-10 py-3 font-medium text-xl text-white rounded-md"
+            class="bg-violet-500 hover:bg-violet-600 px-10 py-3 font-medium text-xl text-white rounded-md"
             type="submit"
           >
             Deposit
           </button>
         </div>
-        <div class="bg-green-500 p-12 rounded-md">
+        <div class="bg-slate-800 p-12 rounded-md">
           <h4 class="text-3xl mb-5">Please Withdraw</h4>
           <input
             class="w-8/12 block text-black mb-5 p-3 text-xl outline-none rounded-md"
