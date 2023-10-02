@@ -18,9 +18,8 @@ document.getElementById("btn-withdraw").addEventListener("click", function () {
   const newWithDrawAmountString = withdrawField.value;
   const newWithDrawAmount = parseFloat(newWithDrawAmountString);
 
-  // step: 07 clear the input field
   withdrawField.value = "";
-
+  // step: 07 clear the input field
   if (isNaN(newWithDrawAmount)) {
     alert("Please provide a valid number");
     return;
